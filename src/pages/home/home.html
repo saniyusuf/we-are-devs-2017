@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Characters</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-card *ngFor="let character of characterList">
+      <img [src]="character.image"/>
+      <ion-card-header>         
+        {{character.name}}
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
+</ion-content>
